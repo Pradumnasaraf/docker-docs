@@ -5,7 +5,7 @@ weight: 40
 keywords: ci/cd, github actions, bun, shiny
 description: Learn how to configure CI/CD using GitHub Actions for your Bun application.
 aliases:
-- /language/dotnet/configure-ci-cd/
+- /language/bun/configure-ci-cd/
 ---
 
 ## Prerequisites
