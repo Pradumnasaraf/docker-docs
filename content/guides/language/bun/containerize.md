@@ -1,11 +1,11 @@
 ---
-title: Containerize a C++ application
+title: Containerize a Bun application
 linkTitle: Containerize your app
 weight: 10
-keywords: C++, containerize, initialize
-description: Learn how to containerize a C++ application.
+keywords: bun, containerize, initialize
+description: Learn how to containerize a Bun application.
 aliases:
-- /language/cpp/containerize/
+  - /language/bun/containerize/
 ---
 
 ## Prerequisites
@@ -14,26 +14,27 @@ aliases:
 
 ## Overview
 
-This section walks you through containerizing and running a C++ application.
+This section walks you through containerizing and running a Bun application.
 
 ## Get the sample application
 
 Clone the sample application to use with this guide. Open a terminal, change directory to a directory that you want to work in, and run the following command to clone the repository:
 
 ```console
-$ git clone https://github.com/dockersamples/c-plus-plus-docker.git
+$ git clone https://github.com/PradumnaSaraf/bun-docker.git
 ```
 
-You should now have the following contents in your `c-plus-plus-docker`
+You should now have the following contents in your `bun-docker`
 directory.
 
 ```text
-├── c-plus-plus-docker/
+├── bun-docker/
 │ ├── compose.yml
 │ ├── Dockerfile
 │ ├── LICENSE
-│ ├── ok_api.cpp
+│ ├── server.js
 │ └── README.md
+
 ```
 
 To learn more about the files in the repository, see the following:
@@ -43,21 +44,21 @@ To learn more about the files in the repository, see the following:
 
 ## Run the application
 
-Inside the `c-plus-plus-docker` directory, run the following command in a
+Inside the `bun-docker` directory, run the following command in a
 terminal.
 
 ```console
 $ docker compose up --build
 ```
 
-Open a browser and view the application at [http://localhost:8080](http://localhost:8080). You will see a message `{"Status" : "OK"}` in the browser.
+Open a browser and view the application at [http://localhost:3000](http://localhost:3000). You will see a message `{"Status" : "OK"}` in the browser.
 
 In the terminal, press `ctrl`+`c` to stop the application.
 
 ### Run the application in the background
 
 You can run the application detached from the terminal by adding the `-d`
-option. Inside the `c-plus-plus-docker` directory, run the following command
+option. Inside the `bun-docker` directory, run the following command
 in a terminal.
 
 ```console
@@ -78,7 +79,7 @@ reference](/reference/cli/docker/compose/_index.md).
 
 ## Summary
 
-In this section, you learned how you can containerize and run your C++
+In this section, you learned how you can containerize and run your Bun
 application using Docker.
 
 Related information:

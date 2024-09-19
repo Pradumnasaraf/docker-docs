@@ -2,7 +2,7 @@
 description: Language-specific guides overview
 linkTitle: Language-specific guides
 weight: 10
-keywords: guides, docker, language, node, java, python, R, go, golang, .net, c++
+keywords: guides, docker, language, node, java, python, R, go, golang, .net, c++, bun
 title: Language-specific guides overview
 toc_min: 1
 toc_max: 2
@@ -29,6 +29,9 @@ Learn how to containerize your applications and start developing using Docker. C
 <div class="grid grid-cols-2 md:grid-cols-3 h-auto gap-4">
     <div class="flex items-center flex-1 shadow p-4">
         <a href="/guides/language/nodejs/"><img class="m-auto rounded" src="/guides/language/images/nodejs.webp" alt="Develop with Node"></a>
+    </div>
+        <div class="flex items-center flex-1 shadow p-4">
+        <a href="/guides/language/bun/"><img class="m-auto rounded" src="/guides/language/images/bun.webp" alt="Develop with Bun"></a>
     </div>
     <div class="flex items-center flex-1 shadow p-4">
         <a href="/guides/language/python/"><img class="m-auto rounded" src="/guides/language/images/python.webp" alt="Develop with Python"></a>
