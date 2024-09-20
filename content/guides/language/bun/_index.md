@@ -5,8 +5,6 @@ title: Bun language-specific guide
 linkTitle: Bun
 toc_min: 1
 toc_max: 2
-aliases:
-- /language/bun/
 ---
 
 The Bun getting started guide teaches you how to create a containerized Bun application using Docker. In this guide, you'll learn how to:
