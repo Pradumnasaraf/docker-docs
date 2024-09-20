@@ -34,7 +34,7 @@ Watch](/manuals/compose/file-watch.md).
 
 Open your `compose.yml` file in an IDE or text editor and then add the Compose Watch instructions. The following example shows how to add Compose Watch to your `compose.yml` file.
 
-```yaml {hl_lines="11-14",linenos=true}
+```yaml {hl_lines="9-12",linenos=true}
 services:
   server:
     image: bun-server
