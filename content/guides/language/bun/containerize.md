@@ -65,7 +65,7 @@ in a terminal.
 $ docker compose up --build -d
 ```
 
-Open a browser and view the application at [http://localhost:8080](http://localhost:8080).
+Open a browser and view the application at [http://localhost:3000](http://localhost:3000).
 
 
 In the terminal, run the following command to stop the application.
