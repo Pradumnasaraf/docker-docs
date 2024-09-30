@@ -57,7 +57,7 @@ $ docker compose watch
 
 Now, if you modify your `server.js` you will see the changes in real time without re-building the image.
 
-To test it out, open the `server.js` file in your favorite text editor and change the message from `{"Status" : "OK"}` to `{"Status" : "Updated"}`. Save the file and refresh your browser at [http://localhost:3000](http://localhost:3000). You should see the updated message.
+To test it out, open the `server.js` file in your favorite text editor and change the message from `{"Status" : "OK"}` to `{"Status" : "Updated"}`. Save the file and refresh your browser at `http://localhost:3000`. You should see the updated message.
 
 Press `ctrl+c` in the terminal to stop your application.
 

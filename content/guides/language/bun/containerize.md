@@ -21,7 +21,7 @@ This section walks you through containerizing and running a Bun application.
 Clone the sample application to use with this guide. Open a terminal, change directory to a directory that you want to work in, and run the following command to clone the repository:
 
 ```console
-$ git clone https://github.com/PradumnaSaraf/bun-docker.git
+$ git clone https://github.com/Pradumnasaraf/bun-docker.git
 ```
 
 You should now have the following contents in your `bun-docker`
@@ -34,8 +34,28 @@ directory.
 │ ├── LICENSE
 │ ├── server.js
 │ └── README.md
-
 ```
+
+In the Dockerfile if you look closely, you will see in `FROM` instruction, we are using `oven/bun` as the base image instead of `bun`. This is because the official DOCKER image for Bun is not available yet, unlike Node. So, we are using the `oven/bun` image which is a custom image created by the company itself. This image is available on the Docker Hub. You can find the image [here](https://hub.docker.com/r/oven/bun).
+
+```dockerfile
+# Use the Bun image as the base image
+FROM oven/bun:latest
+
+# Set the working directory in the container
+WORKDIR /app
+
+# Copy the current directory contents into the container at /app
+COPY . .
+
+# Expose the port on which the API will listen
+EXPOSE 3000
+
+# Run the server when the container launches
+CMD ["bun", "server.js"]
+```
+
+To give you a brief overview of Dockerfile apart from the `FROM` instruction, we are setting the working directory in the container to `/app`, copying the contents of the current directory to the `/app` directory in the container, exposing the port 3000, so that the API can be accessed from outside the container, and finally running the server when the container launches.
 
 To learn more about the files in the repository, see the following:
  - [Dockerfile](/reference/dockerfile.md)
