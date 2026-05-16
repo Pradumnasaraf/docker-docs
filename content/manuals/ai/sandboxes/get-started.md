@@ -243,7 +243,7 @@ set and how to customize it.
 Sandboxes persist after the agent exits. To stop a sandbox without deleting it:
 
 ```console
-$ sbx stop my-sandbox
+$ sbx stop claude-my-project
 ```
 
 Installed packages, Docker images, and configuration changes are preserved
@@ -251,7 +251,7 @@ across restarts. When you're done with a sandbox, remove it to reclaim disk
 space:
 
 ```console
-$ sbx rm my-sandbox
+$ sbx rm claude-my-project
 ```
 
 Removing a sandbox deletes everything inside it — installed packages, Docker
